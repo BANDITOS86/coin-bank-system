@@ -1,0 +1,73 @@
+.account {
+  &__wrapper {
+    &-top {
+      padding: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-view {
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        margin-bottom: 30px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        color: var(--color-black);
+      }
+
+      &-number {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 34px;
+        font-weight: 400;
+      }
+    }
+
+    &-back {
+      display: flex;
+      flex-direction: column;
+
+      &-button {
+        position: relative;
+        margin-bottom: 33px;
+        min-width: 209px;
+        width: 100%;
+        padding: 16px 10px 16px 35px;
+        font-family: 'Ubuntu';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--color-white);
+        background-color: var(--color-navy-blue);
+        border-radius: 7px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 42%;
+          left: 12%;
+          width: 16px;
+          height: 12px;
+          background-image: url('data:image/svg+xml,%3Csvg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M3.83 5L7.41 1.41L6 0L0 6L6 12L7.41 10.59L3.83 7L16 7V5L3.83 5Z" fill="white"/%3E%3C/svg%3E%0A');
+          background-repeat: no-repeat;
+        }
+      }
+
+      &-balance {
+        display: flex;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--color-black);
+
+        &-sum {
+          padding-left: 25px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

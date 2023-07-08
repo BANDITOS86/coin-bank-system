@@ -1,0 +1,194 @@
+.currency {
+  &__exchange {
+    grid-row: 2/3;
+    padding: 50px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+    box-shadow: var(--box-shadow-your-currency);
+    transition: box-shadow .3s ease-in-out;
+
+    &-title {
+      margin-bottom: 25px;
+      font-family: 'Work Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      color: var(--color-black);
+    }
+
+    &-form {
+      position: relative;
+      display: grid;
+      grid-template-columns: 70% 1fr;
+      grid-template-rows: 44px 44px;
+      gap: 25px;
+
+      &-selectors {
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-text {
+          font-family: 'Ubuntu';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--color-black);
+        }
+
+        .choices {
+          margin: 0;
+          max-width: 134px;
+          width: 100%;
+          background-color: var(--color-white);
+        }
+
+        .choices__inner {
+          border: 1px solid var(--color-mischka);
+          border-radius: 7px;
+        }
+
+        .is-open .choices__inner {
+          border-radius: 7px 7px 0 0;
+        }
+
+        .choices__list--dropdown, .choices__list[aria-expanded] {
+          border-bottom-left-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+
+        .choices__list--dropdown .choices__item--selectable,
+        .choices__list[aria-expanded] .choices__item--selectable {
+          padding-right: 0;
+        }
+      }
+
+      &-label {
+        position: relative;
+        grid-row: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      &-text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-midnight-express);
+      }
+
+      &-input {
+        padding-left: 16px;
+        width: 100%;
+        height: 100%;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-black);
+        border: 1px solid var(--color-mischka);
+        border-radius: 7px;
+        outline: none;
+        transition: border-color .3s ease-in-out;
+
+        &[type="number"] {
+          -moz-appearance: textfield;
+          -webkit-appearance: textfield;
+          appearance: textfield;
+        }
+
+        &[type="number"]::-webkit-outer-spin-button,
+        &[type="number"]::-webkit-inner-spin-button {
+          display: none;
+        }
+
+        &.just-validate-error-field {
+          border-color: var(--color-free-speech-red);
+        }
+      }
+
+      &-button {
+        grid-row: 1/3;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-white);
+        background-color: var(--color-navy-blue);
+        border-radius: 7px;
+        transition: background-color .3s ease-in-out;
+
+        &:disabled {
+          background-color: var(--color-mischka);
+          cursor: default;
+        }
+      }
+
+      & .just-validate-error-label {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-free-speech-red);
+      }
+
+      .message-error-nomoney {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-free-speech-red);
+        transition:  opacity .3s ease-in-out, visibility .3s ease-in-out;
+      }
+
+      .exchange-completed {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 24px;
+        color: var(--color-mantis);
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+.error-div {
+  box-shadow: var(--box-shadow-error-exchange);
+}
+
+.complete-div {
+  box-shadow: var(--box-shadow-exchange-complete)
+}
+
+.error-input-exchange {
+  border-color: var(--color-free-speech-red);
+}
+

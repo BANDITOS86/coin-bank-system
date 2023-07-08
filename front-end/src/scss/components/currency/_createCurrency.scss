@@ -1,0 +1,20 @@
+.currency {
+  &__title {
+    padding-top: 50px;
+    padding-bottom: 56px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    color: var(--color-black);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    grid-template-rows: 411px 273px;
+    column-gap: 50px;
+    row-gap: 45px;
+  }
+}

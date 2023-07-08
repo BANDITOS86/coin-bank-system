@@ -1,0 +1,48 @@
+.skeleton {
+  &-accounts {
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    background-size: 200%;
+    animation: shine 1.5s infinite linear;
+
+    &-number {
+      width: 100%;
+      height: 22px;
+      border-radius: 50px;
+    }
+
+    &-balance {
+      max-width: 100px;
+      width: 100%;
+      height: 20px;
+      border-radius: 50px;
+    }
+
+    &-transaction {
+      margin-bottom: 5px;
+      max-width: 205px;
+      width: 100%;
+      height: 18px;
+      border-radius: 50px;
+    }
+
+    &-date {
+      max-width: 150px;
+      width: 100%;
+      height: 14px;
+      border-radius: 50px;
+    }
+
+    &-open {
+      max-width: 110px;
+      width: 100%;
+      height: 52px;
+      border-radius: 50px;
+    }
+  }
+
+  @keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
+}

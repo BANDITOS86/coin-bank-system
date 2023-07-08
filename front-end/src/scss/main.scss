@@ -1,0 +1,31 @@
+// @import '../libs/normalize.css';
+@import "./vendor";
+// @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './fonts';
+@import "./var";
+@import "./mixins";
+@import "./settings";
+// @import "./style";
+
+// Стили компонентов приложения
+@import "./components/header/header";
+@import "./components/login/createLoginForm";
+@import "./components/login/showErrorMessageLogin";
+@import "./components/accounts/createElementAccountsControl";
+@import "./components/accounts/createElementAccountsList";
+@import "./components/accounts/skeletonElementAccountsList";
+@import "./components/atms/createMapAtms";
+@import "./components/atms/createSkeletonMapAtms";
+@import "./components/currency/createCurrency";
+@import "./components/currency/createElementYourCurrency";
+@import "./components/currency/createCurrencyExchange";
+@import "./components/currency/createCurrencyRate";
+@import "./components/currency/skeletonCurrency";
+@import "./components/accountPage/createAccountWrapperTop";
+@import "./components/accountPage/createAccountWrapperCenter";
+@import "./components/accountPage/createAccountWrapperBottom";
+@import "./components/accountPage/skeltonCreateAccount";
+@import "./components/cardAccountHistory/createAccountHistoryTop";
+@import "./components/cardAccountHistory/createAccountHistoryCentet";
+@import "./components/cardAccountHistory/createAccountHistoryBottom";
+@import "./components/cardAccountHistory/skeletonCreateHistory";

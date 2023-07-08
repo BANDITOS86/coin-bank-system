@@ -1,0 +1,49 @@
+.header {
+  position: relative;
+  padding: 22px 0;
+  background-color: var(--color-navy-blue);
+  box-shadow: var(--box-shadow-header);
+  z-index: 9999;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--color-white);
+  }
+
+  &__list {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+    &-link {
+      padding: 16px 24px;
+      background-color: var(--color-white);
+      border-radius: 7px;
+      font-family: "Ubuntu";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-navy-blue);
+      transition: background-color .3s ease-in-out;
+
+      &--is-active {
+        background-color: var(--color-pale-cornflower-blue);
+      }
+    }
+  }
+}
+

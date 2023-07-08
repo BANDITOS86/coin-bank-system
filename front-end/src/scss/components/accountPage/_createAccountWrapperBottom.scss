@@ -1,0 +1,81 @@
+.account {
+
+  &__history {
+    padding: 25px 50px;
+    width: 100%;
+    background-color: var(--color-solitude);
+    border-radius: 50px;
+
+    &-title {
+      margin-bottom: 25px;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-black);
+      text-align: left;
+    }
+
+    &-table {
+      width: 100%;
+      border-spacing: 0;
+    }
+
+    &-thead {
+
+      &-tr {
+        background-color: var(--color-navy-blue);
+
+        &-th {
+          padding: 20px 0;
+          font-family: 'Ubuntu';
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          color: var(--color-white);
+          text-align: left;
+        }
+
+        &-th:first-child {
+          padding-left: 50px;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+        }
+
+        &-th:last-child {
+          padding-right: 50px;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+        }
+      }
+    }
+
+    &-tbody {
+      &-tr {
+        &-td {
+          padding: 20px 0;
+          font-family: 'Ubuntu';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: var(--color-cloud-burst);
+          text-align: left;
+          border-bottom: 2px solid var(--color-navy-blue-01);
+
+          &_from {
+            padding-left: 50px;
+          }
+
+          &_amount {
+            &-green {
+              color: var(--color-mantis);
+            }
+
+            &-red {
+              color: var(--color-radical-red);
+            }
+          }
+        }
+      }
+    }
+  }
+}

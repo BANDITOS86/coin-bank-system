@@ -1,0 +1,29 @@
+:root {
+  --font-family: "Work Sans", "Ubuntu", "Roboto", sans-serif;
+  --content-width: 1370px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  //-----------------------//
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-navy-blue: #116ACC;
+  --color-navy-blue-01: rgba(0, 82, 255, 0.1);
+  --color-pale-cornflower-blue: #A0C3FF;
+  --color-mischka: #9CA3AF;
+  --color-midnight-express:  #182233;
+  --color-free-speech-red: #BA0000;
+  --color-radical-red: #FD4E5D;
+  --color-mantis: #76CA66;
+  --color-raven: #6B7280;
+  --color-cloud-burst: #374151;
+  --color-solitude: #F3F4F6;
+  --color-pale-cornflower-blue-01: rgba(160, 195, 255, 0.1);
+  --box-shadow-header: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  --box-shadow-choices-list: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  --box-shadow-your-currency: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  --box-shadow-rate-currency: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  --box-shadow-error-exchange: 0px 10px 40px rgba(186, 0, 0, 0.25);
+  --box-shadow-exchange-complete: 0px 10px 40px rgba(118, 202, 102, 0.2);
+  --filter-account-select: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
+  --box-shadow-chart-button: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
